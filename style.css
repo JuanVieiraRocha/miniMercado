@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    flex-direction: row;
+}
+.navegacao{
+    display: flex;
+    padding-right: 100px;
+}
+.pesquisa{
+    display: flex;
+    justify-content: flex-end;
+}
