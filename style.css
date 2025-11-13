@@ -21,24 +21,33 @@ header{
     align-items: center;
 }
 .itens{
-    width: 95%;
-    height: 300px;
+    width: 92%;
     background-color: blueviolet;
     margin: 10px;
-    margin-left: 35px;
+    margin-left: 60px;
     border-radius: 10px;
     padding: 0;
     position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .nomeDaSessao{
+    margin-left: 35px;
+    margin-bottom: 0;
     padding-top: 1%;
     padding-left: 1%;
 }
 .cartao{
-    position: absolute;
     background-color: white;
     width: 150px;
     height: 200px;
     margin: 10px;
     border-radius: 10px;
+}
+
+.cartao img{
+    width: 150px;
+    margin-left: 5px;
 }
