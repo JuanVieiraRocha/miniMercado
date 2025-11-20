@@ -1,5 +1,5 @@
-const cards = document.querySelector('cartao')
+const cards = document.querySelectorAll('cartao')
 
 cards.addEventListener('hover', () =>{
-    card
+    
 })
