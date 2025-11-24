@@ -31,7 +31,7 @@ header{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-around;
 }
 .nomeDaSessao{
     margin-left: 35px;
@@ -45,9 +45,25 @@ header{
     height: 200px;
     margin: 10px;
     border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .cartao img{
-    width: 150px;
+    width: 100px;
     margin-left: 5px;
+}
+
+
+#produtos{
+    border-radius: 5px;
+    width: 80%;
+    height: 50%;
+    background-color: dimgray;
+    margin-top: 5%;
+    margin-left: 10%;
+    display: flex;
 }
