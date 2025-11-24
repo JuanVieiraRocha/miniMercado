@@ -27,6 +27,7 @@ const liquidos = document.getElementById('bebida')
 const limpo = document.getElementById('limpeza')
 
 let produtosNoCarrinho = []
+produtosNoCarrinho.push(new Produto("Banana", "2", "comida"))
 localStorage.setItem("produto", JSON.stringify(produtosNoCarrinho))
 let produtos = []
 localStorage.setItem('loja', JSON.stringify(produtos))
@@ -90,7 +91,15 @@ function adicionarProdutoALoja(nome){
     card.appendChild(nam)
     card.appendChild(preco)
     card.appendChild(adiciona)
-    alimenticios.appendChild(card)
+    if(produtoEscolhido.classe == "comida"){
+        alimenticios.appendChild(card)
+    }
+    if(produtoEscolhido.classe == "bebida"){
+        liquidos.appendChild(card)
+    }
+    if(produtoEscolhido.classe == "limpeza"){
+        limpo.appendChild(card)
+    }
 
 }
 
@@ -117,7 +126,7 @@ enviar.addEventListener('click', () =>{
         novoProduto = new Produto(nome.value, valor.value, bebida.value)
     }
     if(limpeza.checked){
-        novoProduto = new Produto(nome.value, valor.value, bebida.value)
+        novoProduto = new Produto(nome.value, valor.value, limpeza.value)
     }
 
     produtos.push(novoProduto)

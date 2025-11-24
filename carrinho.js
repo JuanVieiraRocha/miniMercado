@@ -18,6 +18,7 @@ function atualizaCarrinho(){
 
         carrinho.appendChild(div)
     }
+    somarTotal()
 }
 
 // Somar os valores do carrinho
@@ -33,4 +34,3 @@ function somarTotal(){
 }
 
 window.onload = () => atualizaCarrinho()
-window.onload = () => somarTotal()
