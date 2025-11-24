@@ -8,22 +8,17 @@
 </head>
 <body>
     <header id="header">
-        <nav class="navegacao">
-            <img src="Imagens/Usuario.png" alt="Imagem do usuário" style="width: 80px; height: 50px;">
-            <p>Nome do usuário</p>
-            <img href="carrinho.html" src="Imagens/Carrinho.png" alt="Carrinho" style="width: 80px; height: 50px; cursor: pointer;">
-        </nav>
         <h2>Mercadinho da Dani</h2>
         <div class="pesquisa">
-            <img src="Imagens/lupa.png" alt="Procurar" style="width: 80px; height: 50px;">
+            <img src="Imagens/lupa.png" alt="Procurar" style="width: 50px; height: 30px;">
             <a href="index.html" class="links"><p>Inicio</p></a>
-            <p>Tipo A</p>
-            <p>Tipo B</p>
-            <p>Tipo C</p>
+            <p id="Adicionar">Adicionar</p>
+            <p>Remover</p>
+            <p>Editar</p>
         </div>
     </header>
         <h2 class="nomeDaSessao">Comidas</h2>
-    <section class="itens">
+    <section class="itens" id="comida">
         <div class="cartao">
             <img src="Imagens/Alimenticios/ArrozCarreteiro.png" alt="">
             <p>Arroz Carreteiro</p>
@@ -72,7 +67,7 @@
 
 
         <h2 class="nomeDaSessao">Bebidas</h2>
-    <section class="itens">
+    <section class="itens" id="bebida">
         <div class="cartao">
             <img src="Imagens/Bebidas/YpiocaPrata.png" alt="">
             <p>Ypioca prata</p>
@@ -121,7 +116,7 @@
 
 
         <h2 class="nomeDaSessao">limpeza</h2>
-    <section class="itens">
+    <section class="itens" id="limpeza">
         <div class="cartao">
             <img src="Imagens/Limpeza/AguaSanitária.png" alt="">
             <p>Agua Sanitaria</p>
@@ -167,6 +162,24 @@
             <button>Adicionar ao carrinho</button>
         </div>
     </section>
+    <dialog id="criarProduto">
+        <button id="fechar">Fechar</button>
+        <h1>Preencha as informações</h1>
+        <label for="name">Nome do produto</label>
+        <input type="text" id="nome">
+        <label for="valor">Valor do produto</label>
+        <input type="number" id="valor">
+        <div>
+            <input type="radio" value="comida" id="alimento">
+            <label for="class">Comida</label>
+            <input type="radio" name="Bebida" id="liquido" value="bebida">
+            <label for="class">Bebida</label>
+            <input type="radio" name="limpeza" id="limpo" value = "limpeza">
+            <label for="class">Limpeza</label>
+
+        </div>
+        <button id="enviar">Enviar</button>
+    </dialog>
 </body>
 </html>
 
