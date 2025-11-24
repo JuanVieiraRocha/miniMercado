@@ -7,6 +7,7 @@ header{
     display: flex;
     flex-direction: row;
     background-color: coral;
+    flex-wrap: wrap;
 }
 .navegacao{
     display: flex;
