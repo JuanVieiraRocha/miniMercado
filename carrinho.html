@@ -7,20 +7,13 @@
 </head>
     <body>
         <header id="header">
-        <nav class="navegacao">
-            <img src="Imagens/Usuario.png" alt="Imagem do usuário" style="width: 80px; height: 50px;">
-            <p>Nome do usuário</p>
-            <a href="index.html">
-                <img src="Imagens/Carrinho.png" alt="Carrinho" style="width: 80px; height: 50px;">
-            </a>
-        </nav>
-        <h1 style="width: 900px; padding-left: 10%;">Mercadinho da Daniela</h1>
+        <h2>Mercadinho da Dani</h2>
         <div class="pesquisa">
-                <img src="Imagens/lupa.png" alt="Procurar" style="width: 80px; height: 50px;">
-                <a href="index.html"><p>Inicio</p></a>
-                <p>Adicionar</p>
-                <p>Remover</p>
-                <p>Editar</p>
+            <img src="Imagens/lupa.png" alt="Procurar" style="width: 50px; height: 30px;">
+            <a href="index.html" class="links"><p>Inicio</p></a>
+            <p id="Adicionar">Adicionar</p>
+            <p>Remover</p>
+            <p onclick="addEventListener('click', () =>{ window.open('carrinho.html')})" style="cursor: pointer;">Carrinho</p>
         </div>
         </header>
         <section id="produtos">

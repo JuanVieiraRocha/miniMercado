@@ -86,7 +86,7 @@ function adicionarProdutoALoja(nome){
     nam.textContent = produto.nome
     preco.textContent = "R$ " + produto.valor
     adiciona.textContent = 'Adicionar ao carrinho'
-    adiciona.onclick = adicionarAoCarrinho(produtoEscolhido)
+    adiciona.addEventListener('click', adicionarAoCarrinho(produtoEscolhido))
 
     card.appendChild(nam)
     card.appendChild(preco)
